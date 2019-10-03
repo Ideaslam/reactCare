@@ -5,6 +5,7 @@ import { Container,Text  } from "native-base";
 import { TabNavigator } from "react-navigation";
 
 
+
 class LocationA extends Component {
   constructor(props) {
     super(props);

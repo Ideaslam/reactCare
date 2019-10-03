@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet,Image, Text, View, TouchableHighlight, ScrollView, TouchableOpacity, PermissionsAndroid } from 'react-native';
 import  LocationA  from './components/location';
+ import  DataHandler  from  './components/data-handler';
 
 export default function App() {
 
@@ -17,10 +18,18 @@ export default function App() {
         <TouchableOpacity    onPress={ () => {
              alert('You tapped the button!');
          }}>
-          <Image    source={ require('../AwesomeProject/assets/help.gif')}  style={styles.welcomeImage}/>
-        </TouchableOpacity>
+          <Image    source={ require('./assets/help.gif')}  style={styles.welcomeImage}/> 
+        </TouchableOpacity>   
 
-        <LocationA/>
+
+
+        <LocationA/> 
+
+        <DataHandler/>
+       
+
+      
+         
  
 
         </View>
@@ -103,4 +112,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#2e78b7',
   },
+
+   
 });
